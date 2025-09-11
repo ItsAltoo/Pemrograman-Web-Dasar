@@ -29,6 +29,7 @@ body {
   background-image: url("../assets/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 html {
@@ -36,7 +37,29 @@ html {
 }
 
 .container {
+  background-color: hsl(0, 0%, 98% , 0.7);
   min-height: 100vh;
+  margin-top: 20px;
+  padding: 0 20px;
   width: 100%;
 }
 
+marquee {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 17px 0;
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+marquee img {
+  filter: contrast(0) brightness(2);
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  -webkit-filter: contrast(0) brightness(2);
+}

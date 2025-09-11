@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="styles/components/navbar.css" />
     <link rel="stylesheet" href="styles/components/button.css" />
     <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="styles/pages/about.css" />
+    <link rel="stylesheet" href="styles/anim/animate.css" />
 
-    <title>Welcome</title>
+    <title>Box</title>
   </head>
   <body>
-    <div class="navbar-container">
+    <div class="navbar-container animate-slide-in-down">
       <nav class="navbar">
         <div class="brand">
           <a href="#">
             <img src="assets/logo.webp" alt="Logo" width="40" />
-            <span>MyWebsite</span>
+            <span>BOX</span>
           </a>
         </div>
         <div class="nav-items">
           <ul class="nav-links">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Kontak </a></li>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#contact">Kontak </a></li>
           </ul>
           <li class="btn"><a href="#">Registrasi</a></li>
         </div>
       </nav>
     </div>
 
-    <div class="hero">
-      <div class="hero-text">
+    <div id="hero" class="hero">
+      <div class="hero-text animate-slide-in-left">
         <h1>Selamat Datang di Website Kami</h1>
         <p>
           Kami menyediakan berbagai layanan untuk memenuhi kebutuhan Anda.
@@ -42,13 +44,65 @@
         <a href="#" class="btn">Pelajari Lebih Lanjut</a>
       </div>
 
-      <img src="assets/hero.jpg" alt="Hero Image">
+      <img
+        src="assets/logo.webp"
+        alt="Hero Image"
+        width="340"
+        class="animate-pulse"
+      />
+
+      <div class="hero-footer animate-slide-in-right">
+        <p>by</p>
+        <img src="assets/logo.webp" alt="my profile" />
+      </div>
     </div>
 
-    <div class="container">
+    <marquee behavior="scroll" direction="left">
+      Selamat datang di website kami!
+      <img src="assets/logo.webp" alt="Logo" /> Temukan layanan terbaik kami!
+      <img src="assets/logo.webp" alt="Logo" /> Hubungi kami untuk informasi
+      lebih lanjut! <img src="assets/logo.webp" alt="Logo" /> Terima kasih telah
+      mengunjungi website kami! <img src="assets/logo.webp" alt="Logo" />
+    </marquee>
 
+    <div id="about" class="container">
+      <h2 class="about-title">Tentang Kami</h2>
+      <div class="about">
+
+        <div class="about-banner">
+          <img class="about-logo" src="assets/logo.webp" alt="" />
+          <img
+            class="about-content-1"
+            src="assets/about/content_1.jpeg"
+            alt=""
+          />
+          <img
+            class="about-content-2"
+            src="assets/about/content_2.jpeg"
+            alt=""
+          />
+          <img
+            class="about-content-3"
+            src="assets/about/content_3.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="about-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            similique error quos quas quaerat illum architecto minima hic a
+            exercitationem. Ab, soluta. Delectus exercitationem consequatur
+            nihil neque dolore dolorum officiis. Cupiditate hic assumenda facere
+            ratione libero, atque, dignissimos eveniet earum odio id, quidem
+            voluptatem quae ipsum quisquam quo! Consectetur impedit ab nulla
+            quod maxime natus vel reiciendis voluptatibus doloremque quisquam?
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="container"></div>
+    <div id="services" class="container"></div>
+    <div id="contact" class="container"></div>
   </body>
 </html>
