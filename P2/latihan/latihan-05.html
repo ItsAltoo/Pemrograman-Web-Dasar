@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstrasi Model Kotak dan Tata Letak CSS</title>
+    <link rel="stylesheet" href="latihan-05.css" />
+  </head>
+  <body>
+    <h1>Contoh Model Kotak dan Tata Letak CSS</h1>
+
+    <div class="section">
+      <h2>Demonstrasi Model Kotak</h2>
+      <div class="box-model-demo">
+        <div class="margin-demo">
+          <div class="border-demo">
+            <div class="padding-demo">
+              <div class="content-demo">Konten</div>
+            </div>
+          </div>
+        </div>
+        <div class="box-labels">
+          <span class="label-margin">Margin</span>
+          <span class="label-border">Batas</span>
+          <span class="label-padding">Padding</span>
+          <span class="label-content">Konten</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Margin</h2>
+      <div class="margin-all">Elemen dengan margin di semua sisi</div>
+      <div class="margin-auto">Elemen yang diposisikan di tengah dengan margin otomatis</div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Padding</h2>
+      <div class="padding-all">Elemen dengan padding di semua sisi</div>
+      <div class="padding-individual">
+        Elemen dengan nilai padding berbeda (atas, kanan, bawah, kiri)
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Batas</h2>
+      <div class="border-solid">Batas Solid</div>
+      <div class="border-dashed">Batas Putus-putus</div>
+      <div class="border-dotted">Batas Titik-titik</div>
+      <div class="border-double">Batas Ganda</div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Kartu</h2>
+      <div class="card">
+        <div class="card-header">
+          <h3>Judul Kartu</h3>
+        </div>
+        <div class="card-body">
+          <p>
+            Ini adalah konten kartu. Kartu biasanya digunakan untuk mengorganisir
+            konten dengan cara yang bersih dan terstruktur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Tombol</h2>
+      <div class="button-demo">
+        <button class="btn-primary">Tombol Utama</button>
+        <button class="btn-outline">Tombol Outline</button>
+        <button class="btn-rounded">Tombol Melengkung</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Radius Batas</h2>
+      <div class="border-radius-demo">
+        <div class="radius-small btn-primary">Radius Kecil</div>
+        <div class="radius-large btn-outline">Radius Besar</div>
+        <div class="radius-circle">Lingkaran</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Ukuran Kotak</h2>
+      <div class="content-box">
+        Kotak Konten: Lebar total = lebar + padding + batas
+      </div>
+      <div class="border-box">
+        Kotak Batas: Lebar total = lebar (termasuk padding dan batas)
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Demonstrasi Pemeriksa</h2>
+      <div class="inspector-demo">
+        <div class="inspect-me">Arahkan kursor ke sini dan periksa!</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Demonstrasi Tata Letak</h2>
+      <div class="layout-demo">
+        <aside class="sidebar">
+          <h4>Bilah Samping</h4>
+          <ul>
+            <li>Menu Item 1</li>
+            <li>Menu Item 2</li>
+            <li>Menu Item 3</li>
+            <li>Menu Item 4</li>
+          </ul>
+        </aside>
+        <main class="main-content">
+          <h3>Konten Utama</h3>
+          <p>
+            Ini adalah area konten utama. Ini mendemonstrasikan tata letak
+            fleksibel dengan bilah samping dan area konten utama. Area konten
+            utama berkembang untuk mengisi ruang yang tersedia sementara bilah
+            samping mempertahankan lebar tetap.
+          </p>
+          <p>
+            Tata letak ini menggunakan flexbox untuk pengaturan dan jarak yang
+            tepat antara elemen.
+          </p>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

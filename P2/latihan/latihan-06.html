@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display dan Positioning</title>
+    <link rel="stylesheet" href="latihan-06.css" />
+  </head>
+  <body>
+    <h1>Demo CSS Display dan Positioning</h1>
+
+    <div class="section">
+      <h2>Properti Display</h2>
+      <div class="display-block">Ini adalah elemen blok</div>
+      <div class="display-inline">Elemen inline 1</div>
+      <div class="display-inline">Elemen inline 2</div>
+      <div class="display-inline-block">Inline-block 1</div>
+      <div class="display-inline-block">Inline-block 2</div>
+      <div class="display-none">Elemen ini tersembunyi</div>
+    </div>
+
+    <div class="section">
+      <h2>Properti Position</h2>
+      <div class="position-container">
+        <div class="position-static">Posisi Statis</div>
+        <div class="position-relative">Posisi Relatif</div>
+        <div class="position-absolute">Posisi Absolut</div>
+      </div>
+      <div class="position-fixed">Posisi Tetap</div>
+
+      <div class="sticky-container">
+        <div class="position-sticky">Header Menempel</div>
+        <p>Gulir konten...</p>
+        <p>Konten lainnya...</p>
+        <p>Terus gulir...</p>
+        <p>Konten lebih banyak...</p>
+        <p>Hampir selesai...</p>
+        <p>Konten terakhir...</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Properti Float</h2>
+      <div class="float-container">
+        <div class="float-left">Mengambang Kiri</div>
+        <div class="float-right">Mengambang Kanan</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+        <div class="clear-float">Pembersihan Float</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Penumpukan Z-Index</h2>
+      <div class="z-index-container">
+        <div class="z-index-1">Z-Index 1</div>
+        <div class="z-index-2">Z-Index 2</div>
+        <div class="z-index-3">Z-Index 3</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Properti Overflow</h2>
+      <h3>Overflow Terlihat</h3>
+      <div class="overflow-container overflow-visible">
+        <div class="overflow-content">
+          Konten ini lebih besar dari wadahnya. Ini akan meluap secara terlihat
+          di luar kotak.
+        </div>
+      </div>
+
+      <h3>Overflow Tersembunyi</h3>
+      <div class="overflow-container overflow-hidden">
+        <div class="overflow-content">
+          Konten ini lebih besar dari wadahnya. Ini akan terpotong.
+        </div>
+      </div>
+
+      <h3>Overflow Gulir</h3>
+      <div class="overflow-container overflow-scroll">
+        <div class="overflow-content">
+          Konten ini lebih besar dari wadahnya. Anda bisa menggulir untuk melihat
+          semuanya.
+        </div>
+      </div>
+
+      <h3>Overflow Otomatis</h3>
+      <div class="overflow-container overflow-auto">
+        <div class="overflow-content">
+          Konten ini lebih besar dari wadahnya. Bilah gulir muncul hanya saat
+          diperlukan.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tata Letak Flexbox</h2>
+      <div class="flex-container">
+        <div class="flex-item">Item Flex 1</div>
+        <div class="flex-item">Item Flex 2</div>
+        <div class="flex-item">Item Flex 3</div>
+      </div>
+
+      <div class="flex-container flex-column">
+        <div class="flex-item">Item Kolom 1</div>
+        <div class="flex-item">Item Kolom 2</div>
+        <div class="flex-item">Item Kolom 3</div>
+      </div>
+
+      <div class="flex-container justify-center">
+        <div class="flex-item">Tengah 1</div>
+        <div class="flex-item">Tengah 2</div>
+      </div>
+
+      <div class="flex-container justify-between">
+        <div class="flex-item">Jarak Antara 1</div>
+        <div class="flex-item">Jarak Antara 2</div>
+        <div class="flex-item">Jarak Antara 3</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tata Letak Multi-Kolom</h2>
+      <div class="two-column">
+        <div class="column-left">
+          <h3>Kolom Kiri</h3>
+          <p>Konten untuk kolom kiri ada di sini.</p>
+        </div>
+        <div class="column-right">
+          <h3>Kolom Kanan</h3>
+          <p>Konten untuk kolom kanan ada di sini.</p>
+        </div>
+      </div>
+
+      <div class="three-column">
+        <div class="column">
+          <h3>Kolom 1</h3>
+          <p>Konten kolom pertama.</p>
+        </div>
+        <div class="column">
+          <h3>Kolom 2</h3>
+          <p>Konten kolom kedua.</p>
+        </div>
+        <div class="column">
+          <h3>Kolom 3</h3>
+          <p>Konten kolom ketiga.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contoh Tata Letak Halaman</h2>
+      <div class="page-layout">
+        <header class="page-header">
+          <h3>Header Halaman</h3>
+        </header>
+        <main class="page-content">
+          <p>
+            Area konten utama dengan beberapa contoh teks. Ini mendemonstrasikan
+            struktur halaman dasar.
+          </p>
+        </main>
+        <footer class="page-footer">
+          <p>Footer Halaman</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

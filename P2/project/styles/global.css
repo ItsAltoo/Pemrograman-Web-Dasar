@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+:root {
+  --normal-font: 'Rubik', sans-serif;
+  --fancy-font: 'Annie Use Your Telescope', cursive;
+  --primary-color: hsl(50, 100%, 50%);
+  --primary-color-light: hsl(50, 100%, 60%);
+  --primary-color-dark: hsl(50, 100%, 48%);
+  --secondary-color: hsl(0, 0%, 20%);
+  --background-color: hsl(0, 0%, 98%);
+  --text-color: hsl(0, 0%, 20%);
+  --hover-color: hsl(0, 0%, 10%);
+  --border-color: hsl(0, 0%, 24%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+

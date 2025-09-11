@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Selektor CSS</title>
+    <link rel="stylesheet" href="latihan-02.css" />
+  </head>
+  <body>
+    <h1>Contoh Selektor CSS</h1>
+
+    <section>
+      <h2>Selektor Kelas</h2>
+      <div class="highlight">
+        Ini adalah blok teks yang disorot dengan latar belakang kuning dan border kiri
+      </div>
+      <div class="warning">Ini adalah pesan peringatan dengan latar belakang merah</div>
+    </section>
+
+    <section>
+      <h2>Selektor Anak</h2>
+      <ul class="menu">
+        <li>
+          Menu Utama 1
+          <ul>
+            <li>Sub Menu 1</li>
+            <li>Sub Menu 2</li>
+          </ul>
+        </li>
+        <li>
+          Menu Utama 2
+          <ul>
+            <li>Sub Menu 3</li>
+            <li>Sub Menu 4</li>
+          </ul>
+        </li>
+        <li>Menu Utama 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selektor Pseudo-class</h2>
+      <div class="links">
+        <a href="#bagian1">Tautan 1</a>
+        <a href="#bagian2">Tautan 2</a>
+        <a href="#bagian3">Tautan 3</a>
+        <a href="#bagian4">Tautan 4</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selektor Atribut</h2>
+      <div>
+        <button type="button">Tombol Biasa</button>
+        <button type="button">Tombol Lainnya</button>
+      </div>
+      <div>
+        <input type="text" placeholder="Input Teks" />
+        <input type="email" placeholder="Input Email" />
+        <input type="password" placeholder="Input Kata Sandi" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Selektor Pengelompokan</h2>
+      <h4>Ini adalah judul 4</h4>
+      <h5>Ini adalah judul 5</h5>
+      <h6>Ini adalah judul 6</h6>
+    </section>
+
+    <section>
+      <h2>Selektor Pseudo-element</h2>
+      <div class="container">
+        <p>Paragraf ini memiliki emoji bintang di depannya (menggunakan ::before)</p>
+      </div>
+      <div class="warning">
+        Peringatan ini memiliki emoji peringatan di belakangnya (menggunakan ::after)
+      </div>
+    </section>
+
+    <section>
+      <h2>Selektor ID</h2>
+      <div id="special">Ini adalah elemen khusus yang dipilih menggunakan ID</div>
+    </section>
+
+    <section class="container"></section>
+      <h2>Selektor Keturunan</h2>
+      <p>Ini adalah paragraf di dalam container</p>
+      <div class="inner"></div>
+        <p>Ini adalah paragraf di dalam container inner</p>
+      </div>
+      <p>Ini adalah paragraf lain di dalam container</p>
+    </section>
+
+    <section>
+      <h2>Kelas Border</h2>
+      <div class="border"></div>
+        Elemen ini memiliki border biru dengan sudut melengkung
+      </div>
+    </section>
+
+    <section>
+      <h2>Paragraf Biasa</h2>
+      <p>
+        Ini adalah paragraf biasa dengan gaya default dari selektor body.
+      </p>
+      <p>Paragraf lain yang menunjukkan properti tinggi baris dan warna.</p>
+    </section>
+  </body>
+</html>
