@@ -1,91 +1,149 @@
+# Instagram Profile Clone
 
-# Proyek Halaman Profil
+Sebuah clone halaman profil Instagram yang dibuat menggunakan HTML, CSS, dan framework Tailwind CSS serta Bootstrap. Proyek ini meniru tampilan dan nuansa halaman profil Instagram dengan desain yang responsif dan modern.
 
-Ini adalah halaman profil sederhana yang dibuat menggunakan HTML, dengan menggabungkan berbagai perangkat dan kerangka kerja pengembangan web modern.
+## 📸 Preview
 
-## Teknologi yang Digunakan
+Proyek ini menampilkan halaman profil Instagram dengan:
+- Foto profil bulat
+- Informasi pengguna (nama, bio, statistik)
+- Tombol edit profil dan pengaturan
+- Area highlight stories
+- Grid foto/postingan
+- Navigasi tab (Posts, Saved, Tagged)
 
-  - HTML5
-  - TailwindCSS (melalui CDN)
-  - Bootstrap 5.3.8
-  - Google Fonts (Rubik)
-  - Material Symbols (untuk ikon)
+## 🛠️ Teknologi yang Digunakan
 
------
+- **HTML5**: Struktur dasar halaman
+- **Tailwind CSS**: Framework utility-first untuk styling
+- **Bootstrap 5.3.8**: Komponen UI dan grid system
+- **Bootstrap Icons**: Icon set untuk elemen UI
+- **Google Fonts (Rubik)**: Typography
+- **CSS Custom**: Styling tambahan untuk tema gelap
 
-## Fitur
+## 📁 Struktur Proyek
 
-### 1\. Bagian Profil
-
-  - Tampilan foto profil berbentuk lingkaran besar
-  - Tampilan nama pengguna ("Malik")
-  - Tombol interaktif:
-      - Tombol Edit Profil
-      - Tombol Lihat Arsip
-      - Tombol Pengaturan dengan ikon Material
-
-### 2\. Gaya (Styling)
-
-  - Tema gelap dengan:
-      - Warna latar belakang: `#212121`
-      - Teks berwarna putih untuk kontras
-  - Font kustom: Rubik (Google Fonts)
-  - Tata letak responsif menggunakan Flexbox
-  - Tombol Bootstrap dengan gaya sekunder
-  - Integrasi Material Icons untuk ikon pengaturan
-
-### 3\. Tata Letak (Layout)
-
-  - Tata letak berbasis Flexbox untuk desain responsif
-  - Perataan konten di tengah
-  - Jarak (*gap*) antar elemen untuk tampilan yang rapi
-  - Gambar profil lingkaran menggunakan kelas `rounded-circle` dari Bootstrap
-
------
-
-## Dependensi
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-/>
-
-<link
-  href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-  rel="stylesheet"
-/>
-
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+```
+instagram-profile-clone/
+├── index.html          # File utama HTML
+├── README.md          # Dokumentasi proyek
+└── assets/            # Folder untuk aset (jika ada)
 ```
 
------
+## 🚀 Cara Menjalankan
 
-## Gaya Kustom
+1. **Clone atau download** proyek ini
+2. **Buka file `index.html`** di browser web Anda
+3. Halaman akan langsung ditampilkan tanpa perlu server khusus
 
-Halaman ini menggunakan tema gelap kustom yang diterapkan melalui CSS:
+```bash
+# Jika menggunakan Git
+git clone [repository-url]
+cd instagram-profile-clone
+
+# Buka di browser
+open index.html
+# atau
+start index.html
+```
+
+## 📱 Fitur Responsif
+
+Proyek ini dioptimalkan untuk berbagai ukuran layar:
+
+- **Desktop**: Layout horizontal dengan foto profil besar
+- **Tablet**: Layout yang disesuaikan dengan elemen yang tetap proporsional  
+- **Mobile**: Layout vertikal dengan elemen yang terpusat
+
+### Breakpoints yang Digunakan:
+- `sm`: 640px ke atas
+- `md`: 768px ke atas  
+- `lg`: 1024px ke atas
+
+## 🎨 Komponen Utama
+
+### 1. Header Profile
+- **Foto Profil**: Gambar bulat responsif (36x36px di mobile, 40vh di desktop)
+- **Info Pengguna**: Nama, tombol aksi, dan statistik
+- **Tombol**: Edit Profile, Lihat Arsip, dan Settings
+
+### 2. Bio Section
+- Nama pengguna
+- Deskripsi singkat (Web Developer)
+
+### 3. Highlights Section
+- Area untuk Instagram Stories highlights
+- Tombol "Baru" untuk menambah highlight
+
+### 4. Navigation Tabs
+- Tab Posts (Grid icon)
+- Tab Saved (Bookmark icon)  
+- Tab Tagged (Person icon)
+
+### 5. Posts Grid
+- Grid 3 kolom untuk menampilkan foto
+- Gambar yang responsive dan cover penuh
+- Gap yang konsisten antar gambar
+
+## 🎯 Kustomisasi
+
+### Mengubah Profil
+Untuk mengubah informasi profil, edit bagian berikut di `index.html`:
+
+```html
+<!-- Foto Profil -->
+<img src="GANTI_URL_FOTO_ANDA" alt="My Profile Picture" />
+
+<!-- Nama Pengguna -->
+<h1 class="font-thin text-2xl">NAMA_ANDA</h1>
+
+<!-- Bio -->
+<p>NAMA_ANDA</p>
+<p>PROFESI_ANDA</p>
+```
+
+### Mengubah Postingan
+Untuk mengganti gambar postingan, ubah URL pada bagian grid:
+
+```html
+<img src="URL_GAMBAR_BARU" alt="Deskripsi Gambar" />
+```
+
+### Mengubah Warna Tema
+Tema gelap dapat dimodifikasi di bagian CSS:
 
 ```css
 body {
-  font-family: "Rubik", sans-serif;
-  background-color: #212121;
-  color: white;
+    background-color: #212121; /* Warna background */
+    color: white; /* Warna teks */
 }
 ```
 
------
+## 📦 Dependencies (CDN)
 
-## Desain Responsif
+Proyek ini menggunakan CDN untuk semua dependencies:
 
-Tata letaknya dibangun menggunakan properti Flexbox untuk memastikan perataan dan jarak yang tepat:
+- **Tailwind CSS**: `@tailwindcss/browser@4`
+- **Bootstrap**: `5.3.8`
+- **Bootstrap Icons**: `1.13.1`
+- **Google Fonts**: `Rubik font family`
 
-  - Kontainer fleksibel dengan konten di tengah
-  - Jarak (*gap*) yang responsif
-  - Perataan teks dan tombol yang sesuai
+## 🌟 Keunggulan
+
+- ✅ **Fully Responsive** - Bekerja di semua device
+- ✅ **Modern Design** - Mengikuti design system Instagram
+- ✅ **Dark Theme** - Tema gelap yang nyaman di mata
+- ✅ **Fast Loading** - Menggunakan CDN untuk performa optimal
+- ✅ **Cross Browser** - Compatible dengan browser modern
+- ✅ **Clean Code** - HTML yang terstruktur dan mudah dipahami
+
+## 🔧 Pengembangan Lebih Lanjut
+
+Untuk pengembangan selanjutnya, Anda dapat menambahkan:
+
+- **JavaScript Interactivity**: Modal untuk gambar, like button, comments
+- **Backend Integration**: Koneksi dengan database untuk data dinamis
+- **Authentication**: Sistem login/register
+- **Real Posts**: Upload dan manajemen postingan
+- **Stories Feature**: Implementasi Instagram Stories
+- **Following System**: Sistem follow/unfollow
