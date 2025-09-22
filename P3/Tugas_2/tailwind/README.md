@@ -120,3 +120,48 @@ Ini adalah salah satu kekuatan utama Tailwind. Anda bisa menerapkan kelas yang b
   - `md:h-44 md:w-44`: Pada layar medium ke atas, ukurannya menjadi lebih besar, yaitu `11rem x 11rem`.
 
 Dengan menggabungkan kelas-kelas utilitas ini, Anda dapat membangun desain yang kompleks dan sepenuhnya responsif langsung di dalam HTML Anda.
+
+## Jawaban Soal Bootstrap
+
+## 1. Keputusan Grid & Gap di Tiap Ukuran Layar
+
+Tujuannya adalah **kenyamanan membaca** dan **efisiensi ruang**.
+
+- **Mobile (Layar Kecil):** Pakai **1-2 kolom** agar konten tidak terlalu kecil.
+- **Desktop (Layar Besar):** Pakai **banyak kolom** (misal 4-5) untuk memanfaatkan ruang yang lebar.
+
+---
+
+## 2. Tombol Follow/Edit Profile di Mobile
+
+Tombol harus diletakkan di **area yang mudah dijangkau ibu jari** (Thumb Zone). Pendekatan terbaik adalah meletakkannya di **bar bawah yang menempel di layar** (sticky bottom bar).
+
+---
+
+## 3. Jika Postingan Bertambah Jadi 50
+
+- **Potensi Masalah:** Halaman menjadi **sangat lambat dimuat** dan terlihat **terlalu ramai**.
+- **Solusi:** Jangan tampilkan semua sekaligus. Gunakan **Paginasi** (halaman 1, 2, 3) atau tombol **"Muat Lebih Banyak"** (Load More).
+
+---
+
+## 4. Manfaat Utility Responsif Tailwind
+
+Tailwind memungkinkan kita mengatur tampilan untuk berbagai ukuran layar langsung di HTML dengan _prefix_ seperti `md:` dan `lg:`. Ini sangat cepat dan praktis.
+
+Contoh: `class="grid-cols-1 md:grid-cols-3 lg:grid-cols-5"`
+
+- Artinya: 1 kolom di mobile, 3 kolom di tablet, dan 5 kolom di desktop.
+
+---
+
+## 5. Trade-off: Utility Classes vs. Komponen CSS
+
+- **Utility Classes (cth: Tailwind):**
+
+  - **✅ Kelebihan:** Pengerjaan sangat **cepat**, file CSS akhir sangat **kecil**.
+  - **❌ Kekurangan:** Kode HTML terlihat **berantakan/panjang**.
+
+- **Komponen CSS (cth: CSS biasa/BEM):**
+  - **✅ Kelebihan:** Kode HTML **bersih**, mudah untuk menjaga **konsistensi** desain.
+  - **❌ Kekurangan:** Pengerjaan lebih **lambat**, file CSS bisa menjadi **besar**.
