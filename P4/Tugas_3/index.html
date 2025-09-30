@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Laporan Nilai Mahasiswa</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="header-title">Laporan Studi</h1>
+
+      <div class="mb-4">
+        <label for="input-nama">Nama:</label>
+        <input type="text" placeholder="Masukkan nama" id="input-nama" />
+      </div>
+
+      <div class="mb-4">
+        <label for="input-nilai">Nilai:</label>
+        <input type="number" placeholder="Masukkan nilai" id="input-nilai" />
+      </div>
+
+      <button id="submit-btn">Submit</button>
+
+      <hr />
+
+      <p>Nama: <span id="nama-mhs">-</span></p>
+      <p>Nilai: <span id="nilai-mhs">-</span></p>
+      <p id="status-kelulusan">Status: Sedang diprosess..</p>
+    </div>
+
+    <script src="soal1.js"></script>
+  </body>
+</html>
