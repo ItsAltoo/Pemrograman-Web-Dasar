@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Seleksi nilai</h1>
+
+    <script type="text/javascript">
+      let nilai = parseInt(prompt("Masukkan nilai (0-100):", 0));
+      let grade;
+      let hasil;
+
+      if (nilai >= 80 && nilai <= 100) {
+        grade = "A";
+        hasil = "Lulus";
+      } else if (nilai >= 75 && nilai < 80) {
+        grade = "AB";
+        hasil = "Lulus";
+      } else if (nilai >= 70 && nilai < 75) {
+        grade = "B";
+        hasil = "Lulus";
+      } else if (nilai >= 65 && nilai < 70) {
+        grade = "BC";
+        hasil = "Lulus";
+      } else if (nilai >= 60 && nilai < 65) {
+        grade = "C";
+        hasil = "Lulus";
+      } else if (nilai >= 50 && nilai < 60) {
+        grade = "D";
+        hasil = "Tidak Lulus";
+      } else if (nilai >= 0 && nilai < 50) {
+        grade = "E";
+        hasil = "Tidak Lulus";
+      } else {
+        alert("Nilai tidak valid. Harap masukkan nilai antara 0-100.");
+      }
+
+      if (grade) {
+        document.write("Nilai Anda: " + nilai + "<br>");
+        document.write("Grade Anda: " + grade + "<br>");
+        document.write("Hasil: " + hasil);
+      }
+    </script>
+  </body>
+</html>
