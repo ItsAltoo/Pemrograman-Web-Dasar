@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>UTS</title>
+  </head>
+  <body
+    class="h-screen w-full flex items-center justify-center bg-zinc-200 p-3 gap-5"
+  >
+    <form
+      class="flex flex-col gap-4 p-5 rounded-xl shadow-md bg-zinc-100 border-1 border-zinc-400 w-screen"
+    >
+      <legend for="" class="fieldset-legend">NAMA LENGKAP</legend>
+      <input
+        type="text"
+        placeholder="Masukkan nama"
+        class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
+        id="name"
+        value=""
+      />
+
+      <legend for="" class="fieldset-legend">NIM</legend>
+      <input
+        type="number"
+        placeholder="20210001"
+        class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
+        id="nim"
+        value=""
+      />
+
+      <legend for="" class="fieldset-legend">SEMESTER</legend>
+      <input
+        type="number"
+        placeholder="1-8"
+        class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
+        id="semester"
+        value=""
+      />
+
+      <legend for="" class="fieldset-legend">PROGRAM STUDI</legend>
+      <input
+        class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
+        list="studi"
+        id="program-studi"
+        value=""
+      />
+      <datalist id="studi">
+        <option value="SI">
+        <option value="TI">
+        <option value="TS">
+        <option value="TM">
+      </datalist>
+
+      <legend for="" class="fieldset-legend">EMAIL</legend>
+      <input
+        type="email"
+        class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
+        placeholder="email@example.com"
+        id="email"
+        value=""
+      />
+
+      <button
+        class="bg-[#212121] text-white py-2 rounded-md"
+        onclick="onClick()"
+      >
+        KIRIM DATA
+      </button>
+
+      <div class="relative">
+        <p class="p-2 bg-zinc-300 rounded-md relative z-10">
+          💡 Isi data Mahasiswa dengan benar
+        </p>
+        <p class="p-2 bg-[#212121] rounded-md absolute top-0 -left-2">
+          💡 Isi data Mahasiswa dengan benar
+        </p>
+      </div>
+    </form>
+
+    <!-- second container -->
+    <div class="w-screen">
+      <div
+        class="bg-white/20 p-8 rounded-xl shadow-md border-1 border-zinc-400 mb-5 relative"
+      >
+        <h1>Apa yang terjadi saat Anda klik "Kirim Data"?</h1>
+        <hr class="text-zinc-300" />
+        <div class="bg-zinc-100 rounded-xl mt-8 p-8 relative z-10">
+          <div
+            class="rounded-xl absolute bg-[#212121] top-0 -left-2 -z-10 h-full"
+          ></div>
+          <p>✔️ Data ditampilkan di Console</p>
+          <p>✔️ Data disimpan di array</p>
+          <p>✔️ Jumlah data di-update</p>
+          <p>✔️ Form akan kosong kembali</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-zinc-100 p-8 rounded-xl shadow-md border-1 border-zinc-400"
+      >
+        <h1 class="font-bold text-xl">Table Mahasiswa</h1>
+        <hr class="text-zinc-500" />
+        <table class="w-full mt-5">
+          <tr class="bg-zinc-200 border-zinc-400 border-y-1 h-8">
+            <th>NO</th>
+            <th>NAMA</th>
+            <th>INFO</th>
+          </tr>
+          <tr class="border-zinc-400 border-b-1 h-18">
+            <td align="center">1</td>
+            <td align="center">Budi Santoso</td>
+            <td>
+              <p><span class="mr-5">Prodi:</span> TI</p>
+              <hr class="text-zinc-500" />
+              <p><span class="mr-5">Semester:</span> 3</p>
+              <hr class="text-zinc-500" />
+            </td>
+          </tr>
+          <tr class="border-zinc-400 border-b-1 h-18">
+            <td align="center">2</td>
+            <td align="center">Siti Nurhaliza</td>
+            <td>
+              <p><span class="mr-5">Prodi:</span> SI</p>
+              <hr class="text-zinc-500" />
+              <p><span class="mr-5">Semester:</span> 4</p>
+              <hr class="text-zinc-500" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
