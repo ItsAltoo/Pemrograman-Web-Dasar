@@ -11,9 +11,7 @@
     />
     <title>UTS</title>
   </head>
-  <body
-    class="h-screen w-full flex items-center justify-center bg-zinc-200 p-3 gap-5"
-  >
+  <body class="w-full flex items-start justify-center bg-zinc-200 p-3 gap-5">
     <form
       class="flex flex-col gap-4 p-5 rounded-xl shadow-md bg-zinc-100 border-1 border-zinc-400 w-screen"
     >
@@ -42,21 +40,23 @@
         class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
         id="semester"
         value=""
+        min="1"
+        max="8"
+        step="1"
+        oninput="if(this.value){ this.value = Math.max(1, Math.min(8, parseInt(this.value)||0)); }"
       />
 
       <legend for="" class="fieldset-legend">PROGRAM STUDI</legend>
-      <input
+      <select
         class="border-zinc-500 border-1 rounded-md px-2 py-1 bg-zinc-300 shadow-md"
-        list="studi"
         id="program-studi"
-        value=""
-      />
-      <datalist id="studi">
-        <option value="SI">
-        <option value="TI">
-        <option value="TS">
-        <option value="TM">
-      </datalist>
+      >
+        <option value="">--Pilih--</option>
+        <option value="SI">SI</option>
+        <option value="TI">TI</option>
+        <option value="TS">TS</option>
+        <option value="TM">TM</option>
+      </select>
 
       <legend for="" class="fieldset-legend">EMAIL</legend>
       <input
@@ -68,6 +68,7 @@
       />
 
       <button
+        type="button"
         class="bg-[#212121] text-white py-2 rounded-md"
         onclick="onClick()"
       >
@@ -75,10 +76,9 @@
       </button>
 
       <div class="relative">
-        <p class="p-2 bg-zinc-300 rounded-md relative z-10">
-          💡 Isi data Mahasiswa dengan benar
-        </p>
-        <p class="p-2 bg-[#212121] rounded-md absolute top-0 -left-2">
+        <p
+          class="p-2 bg-zinc-300 rounded-md relative z-10 shadow-[-5px_0_0_0_rgba(0,0,0)]"
+        >
           💡 Isi data Mahasiswa dengan benar
         </p>
       </div>
@@ -89,12 +89,13 @@
       <div
         class="bg-white/20 p-8 rounded-xl shadow-md border-1 border-zinc-400 mb-5 relative"
       >
-        <h1>Apa yang terjadi saat Anda klik "Kirim Data"?</h1>
+        <h1 class="font-bold pb-2">
+          Apa yang terjadi saat Anda klik "Kirim Data"?
+        </h1>
         <hr class="text-zinc-300" />
-        <div class="bg-zinc-100 rounded-xl mt-8 p-8 relative z-10">
-          <div
-            class="rounded-xl absolute bg-[#212121] top-0 -left-2 -z-10 h-full"
-          ></div>
+        <div
+          class="bg-zinc-100 rounded-xl mt-8 p-8 relative z-10 shadow-[-5px_0_0_0_rgba(0,0,0)]"
+        >
           <p>✔️ Data ditampilkan di Console</p>
           <p>✔️ Data disimpan di array</p>
           <p>✔️ Jumlah data di-update</p>
