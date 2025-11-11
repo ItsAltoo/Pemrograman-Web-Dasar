@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form style="display: flex; flex-direction: column; gap: 5px">
+      <label for="">username</label>
+      <input type="text" placeholder="username" id="username" value="" />
 
-    <style>
-        table,th,td{
-            border: 1px solid black;
-        }
-    </style>
+      <label for="">password</label>
+      <input type="password" placeholder="password" id="password" value="" />
 
-</head>
-<body>
-    <table>
-        <tr>
-            <th>Person</th>
-            <th>Most interest in</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Alice</td>
-            <td>Machine Learning</td>
-            <td>24</td>
-        </tr>
-    </table>
-</body>
+      <label for="">class</label>
+      <select name="" id="class" value="">
+        <option>Choose your class</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+
+      <button>submit</button>
+    </form>
+
+    <script>
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      const classes = document.getElementById("class");
+
+      document.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log([username.value, password.value, classes.value]);
+      });
+    </script>
+  </body>
 </html>
